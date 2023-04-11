@@ -1,0 +1,632 @@
+@font-face {
+  font-family: MazdaType, Helvetica, Arial, sans-serif;
+  src: url("font/Mazda\ Type\ Medium.eot");
+  src: url("font/Mazda\ Type\ Medium.eot") format("embedded-opentype"),
+    url("font/Mazda\ Type\ Medium.woff2") format("woff2"),
+    url("font/Mazda\ Type\ Medium.woff") format("woff"),
+    url("font/Mazda\ Type\ Medium.ttf") format("truetype"),
+    url("font/Mazda\ Type\ Medium.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  font-family: MazdaType, Helvetica, Arial, sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.link-hover {
+  position: relative;
+}
+.link-hover:after {
+  content: "";
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 0;
+  top: 100%;
+  z-index: 2;
+  left: 0;
+  margin-left: 50%;
+  border-bottom: 3px solid #910a2d;
+  transform-origin: bottom center;
+  transition: width 0.3s, margin-left 0.3s;
+}
+.link-hover:hover:after {
+  border-bottom: 3px solid #910a2d;
+  width: calc(100% + 20px);
+  margin-left: -10px;
+  transition: width 0.3s, margin-left 0.3s;
+}
+.link-hover:hover {
+  transition: color 0.3s;
+}
+
+.link-hover-two {
+  position: relative;
+}
+.link-hover-two:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  border: 0 solid #101010;
+  background-color: #101010;
+  border-radius: 5px;
+  margin-left: 0;
+  transition: width 0.3s, margin-left 0.3s;
+  z-index: 1;
+}
+.link-hover-two:before {
+  background-color: #910a2d;
+  border: 0 solid #910a2d;
+  width: 0;
+  margin-left: 50%;
+  z-index: 2;
+}
+.link-hover-two:hover:before {
+  width: 100%;
+  margin-left: 0;
+  background-color: #910a2d;
+  border: 0 solid #910a2d;
+  transition: width 0.3s, margin-left 0.3s;
+  z-index: 2;
+}
+.link-hover-two:hover {
+  transition: color 0.3s;
+  color: #fff;
+}
+.link-hover-two span {
+  color: #000;
+  z-index: 3;
+  position: relative;
+}
+.link-hover-two:hover span {
+  color: #fff;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+header {
+  background-color: #032a43;
+}
+.blue-bg {
+  background-color: #032a43;
+}
+@font-face {
+  font-family: "Axiforma";
+  font-style: normal;
+  font-weight: normal;
+
+  src: local("Axiforma"), url("../src/font/Axiforma-Medium.woff") format("woff");
+  src: local("Axiforma"),
+    url("../src/font/Axiforma-Regular.woff") format("woff");
+}
+@import url(//db.onlinewebfonts.com/c/1b1937eec26f36a2cd4064c48f7e9aa4?family=Mazda+Type+Medium);
+body {
+  font-family: "Mazda Type Medium";
+}
+.border-end {
+  border-right: 1px solid #dee2e6 !important;
+  height: 26px !important;
+}
+.navbar-collapse {
+  flex-grow: 0 !important;
+  justify-content: flex-end !important;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-color: #ffff;
+}
+.fs-10 {
+  font-size: 10px;
+}
+.fs-12 {
+  font-size: 12px;
+}
+.fs-13 {
+  font-size: 13px;
+}
+.fs-14 {
+  font-size: 14px;
+}
+.fs-16 {
+  font-size: 16px;
+}
+.fs-18 {
+  font-size: 18px;
+}
+.fs-22 {
+  font-size: 22px;
+}
+.fs-24 {
+  font-size: 24px;
+}
+.fs-28 {
+  font-size: 28px;
+}
+.fs-40 {
+  font-size: 40px;
+}
+.fs-42 {
+  font-size: 42px;
+}
+.lh-28 {
+  line-height: 28px;
+}
+
+.lh-32 {
+  line-height: 32px;
+}
+.fw-700 {
+  font-weight: 700;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.ls-2 {
+  letter-spacing: 2.5px;
+}
+.ls-4 {
+  letter-spacing: 4.5px;
+}
+.lh-26 {
+  line-height: 26px;
+}
+.w-35 {
+  width: 35%;
+}
+.mb-300 {
+  margin-bottom: 300px;
+}
+.min-h-40 {
+  min-height: 40px;
+}
+.custom {
+  text-decoration: none;
+}
+.text-dark-red {
+  color: #910a2d;
+}
+.text-light-black {
+  color: #161616;
+}
+.text-dark-gray {
+  color: #707070;
+}
+.header-small-tags a {
+  color: #ababab;
+}
+.header-small-tags a:hover {
+  color: #ffff;
+}
+.Intro-banner {
+  padding-top: 60px;
+  font-family: m;
+}
+.intro-video-bg {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  transition: 0.5s;
+}
+.bg-video {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  object-fit: cover;
+}
+.bg-overly {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+.main-card h3 {
+  letter-spacing: 3px;
+}
+.main-card h4 {
+  letter-spacing: 1.8px;
+}
+.Intro-banner .btn {
+  width: 50% !important;
+}
+.main-card {
+  color: #ffff;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 90%;
+  height: 71%;
+  opacity: 1;
+  visibility: inherit;
+  padding: 120px 10px 130px 10px;
+  position: absolute;
+  top: 25%;
+  display: flex;
+  justify-content: center;
+}
+.card_btn {
+  background-color: #ffff;
+  color: #000000 !important;
+  height: 40px;
+}
+
+.card_btn:hover {
+  background-color: #ffff;
+  color: #ffff;
+  border: none !important;
+}
+/* .main-card .button:hover {
+  background-color: #910a2d;
+  color: #ffff;
+} */
+.discover-banner {
+  background-color: #f5f5f5;
+  padding: 160px 0px 130px 0px;
+}
+.discover-tabs .nav-link {
+  border: none !important;
+  border-radius: 0px !important;
+  color: #707070 !important;
+  font-size: 12px;
+  letter-spacing: 2.5px;
+}
+.discover-tabs .nav-link.active {
+  color: #161616 !important;
+  background-color: transparent !important;
+  border-color: none !important;
+}
+.main-car-card:hover .main-img {
+  display: none;
+}
+.main-car-card .hover-img {
+  display: none;
+}
+.main-car-card:hover .hover-img {
+  display: block;
+}
+.main-silder .carousel-caption {
+  /* position: absolute;
+  right: 0 !important;
+  top: 60% !important;
+  left: 20% !important; */
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: center !important;
+}
+.main-slider-img {
+  width: 100%;
+  height: 100vh;
+}
+.carousel-indicators [data-bs-target] {
+  border-radius: 50% !important;
+  width: 10px !important;
+  height: 10px !important;
+  background: #ffff !important;
+  opacity: 1 !important;
+  border-bottom: 10px !important;
+  border-top: 0 !important;
+  margin-right: 6px !important;
+  margin-left: 6px !important;
+}
+.carousel-indicators .active {
+  border: 2px solid #ffff !important;
+  background-color: #101010 !important;
+  border-bottom: 0 !important;
+  border-top: 0 !important;
+  opacity: 1 !important;
+}
+.carousel-indicators {
+  bottom: 47% !important;
+}
+.discover-card {
+  color: #fff;
+  background-color: #101010 !important;
+  border: 1px solid #999;
+  top: unset;
+  z-index: 1;
+  width: 100%;
+  padding: 35px;
+  margin-bottom: 10px;
+  /* position: absolute;
+  width: 35%;
+  top: 35%; */
+}
+
+.card_btn_2 {
+  padding: 8px 20px;
+  letter-spacing: 2.5px;
+  background-color: #101010;
+  color: #fff;
+  border: 2px solid #ffff !important;
+  display: flex;
+  justify-content: start;
+}
+.the-mazda-hub {
+  padding: 100px 0px;
+}
+.mazda-warranty {
+  padding: 90px 0px 70px 0px;
+  background-color: #101010;
+}
+.warranty-btn {
+  height: 45px !important;
+  padding: 10px 20px;
+}
+.legal-banner {
+  padding: 90px 0px 0px 0px;
+}
+.main-accordion {
+  padding: 80px 0px;
+}
+.main-accordion .accordion-item {
+  border: 0 !important;
+}
+.main-accordion .accordion-button {
+  border: 0px !important;
+  border-radius: 0px !important;
+  width: 0px !important;
+}
+.main-accordion .accordion-button:focus {
+  border: 0px !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+footer {
+  background-color: #101010;
+  padding: 40px 0px 80px 0px;
+}
+footer a {
+  text-decoration: none;
+}
+.social-icon {
+  mix-blend-mode: exclusion;
+}
+.custom-border-bottom {
+  border-bottom: 0.5px solid #282c34;
+}
+.footer-car-banner {
+  padding: 50px 0px;
+}
+footer ul li {
+  list-style-type: none;
+}
+.spring-care {
+  margin-top: 10px;
+}
+
+.custom-border-bottom-1 {
+  border-bottom: 1px solid #dee2e6;
+}
+.custom-border-end-1 {
+  border-right: none;
+}
+.custom-border-end-2 {
+  border-right: none;
+}
+.custom-border-bottom-3 {
+  border-bottom: 1px solid #dee2e6;
+}
+.w-65 {
+  width: 65%;
+}
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .main-card {
+    color: #ffff;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 60%;
+    height: 71%;
+    opacity: 1;
+    visibility: inherit;
+    padding: 120px 10px 130px 10px;
+    position: absolute;
+    top: 25%;
+    display: flex;
+    justify-content: center;
+  }
+  .min-h-40 {
+    min-height: 50px;
+  }
+  .fs-md-12 {
+    font-size: 12px;
+  }
+  .custom-border-bottom {
+    border-bottom: none;
+  }
+  .custom-border-end-1 {
+    border-right: 1px solid #dee2e6;
+  }
+  .custom-border-bottom-3 {
+    border-bottom: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .custom-border-end-2 {
+    border-right: 1px solid #dee2e6;
+  }
+  .custom-border-bottom-1 {
+    border-bottom: none;
+  }
+  .fs-lg-14 {
+    font-size: 14px;
+  }
+  .fs-lg-16 {
+    font-size: 16px;
+  }
+  .fs-lg-18 {
+    font-size: 18px;
+  }
+  .fs-lg-28 {
+    font-size: 28px;
+  }
+  .w-lg-30 {
+    width: 30% !important;
+  }
+  .mb-lg-350 {
+    margin-bottom: 350px;
+  }
+  .Intro-banner .btn {
+    width: 25% !important;
+    position: relative;
+  }
+  .main-card {
+    width: 420px;
+    height: 100%;
+    padding: 120px 10px 130px 10px;
+    top: 5%;
+  }
+  .main-silder .carousel-caption {
+    position: absolute;
+    right: 0 !important;
+    top: 25% !important;
+    left: 20% !important;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: start !important;
+  }
+  .carousel-indicators {
+    bottom: 0 !important;
+  }
+  .discover-card {
+    color: #fff;
+    background-color: #101010 !important;
+    border: 1px solid #999;
+    top: unset;
+    z-index: 1;
+    width: 100%;
+    padding: 35px;
+    position: absolute;
+    width: 35%;
+    top: 35%;
+  }
+  .spring-care {
+    right: 10%;
+  }
+  .mazda-warranty .custom-border-start {
+    border-left: 1px solid #dee2e6;
+  }
+  .w-65 {
+    width: 35%;
+  }
+}
+@media (min-width: 1200px) {
+  .fs-xl-16 {
+    font-size: 16px;
+  }
+  .fs-xl-20 {
+    font-size: 20px;
+  }
+  .fs-xl-22 {
+    font-size: 20px;
+  }
+  .fs-xl-24 {
+    font-size: 24px;
+  }
+  .fs-xl-26 {
+    font-size: 26px;
+  }
+  .fs-xl-30 {
+    font-size: 30px;
+  }
+  .fs-xl-40 {
+    font-size: 40px;
+  }
+
+  .main-card {
+    width: 420px;
+    height: 90%;
+    padding: 120px 10px 100px 10px;
+  }
+  .Intro-banner .btn {
+    padding-left: 23px !important;
+    padding-right: 23px !important;
+    height: 43px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    width: 15% !important;
+    border-radius: 6px;
+  }
+  /* .Intro-banner .btn:hover {
+    background-color: #910a2d;
+    transition: color 0.3s !important;
+    color: #ffff;
+    border: 0 !important;
+  } */
+  .main-card .card_btn {
+    padding-left: 23px !important;
+    padding-right: 23px !important;
+    height: 43px;
+    font-size: 13px;
+    font-weight: 700;
+    background-color: #ffff;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: #000000 !important;
+    width: 45% !important;
+  }
+  .main-card .button:hover {
+    background-color: #910a2d;
+    transition: color 0.3s !important;
+    color: #ffff;
+    border: 0 !important;
+  }
+  .footer-car-banner {
+    padding: 50px 250px 30px 250px;
+  }
+}
+@media (min-width: 1400px) {
+  .px-xl-150 {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
